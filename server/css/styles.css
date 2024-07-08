@@ -1,0 +1,160 @@
+body{
+  margin: 0;
+}
+
+h1{
+  color: white;
+  background: rgb(118,194,16);
+  background: linear-gradient(90deg, rgba(4,92,3,1) 10%, rgba(19,64,18,1) 50%, rgba(43,245,39,1) 95%);
+  border-bottom: rgba(24,26,24,1) solid 3px;
+  padding-top: 3%;
+  text-align: center;
+}
+
+input{
+  word-wrap: break-word;
+  size: 20;
+  box-sizing: border-box;
+  width: 100%;
+
+}
+
+span{
+  word-wrap: break-word;
+}
+
+pre{
+  overflow: auto;
+  font-size: 1.4em;
+}
+
+.b1{
+  text-align: center;
+}
+
+.balances{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding-bottom: 1%;
+  border-bottom: grey solid 3px;
+
+}
+
+.button{
+  background-color: #eee;
+  border: 0.5px solid #EDEDED;
+  border-radius: 8px;
+  padding: 8px 8px;
+  font-size: 0.95em;
+  margin: 2px;
+}
+
+.button:hover {
+	 	cursor: pointer;
+		background-color: lightgrey;
+  	border-radius: 8px;
+  	padding: 8px 8px;
+		border-color: #16181C;
+}
+
+.button:active {
+  opacity: 0.8;
+	font-style: italic;
+}
+
+.Create{
+  margin-top: 1%;
+}
+
+.INF{
+  background: rgb(8,92,6);
+  background: radial-gradient(circle, rgba(8,92,6,1) 0%, rgba(12,138,10,1) 200%);
+  color: #fff;
+  border-radius: 5px;
+  padding: 2%;
+  max-width: 99%;
+}
+
+.statusdata{
+  margin-left: 1%;
+}
+
+.maindata{
+  font-weight: bold;
+}
+
+.table{
+  display: inline-block;
+}
+
+.Box{
+  background-color: black;
+  color: #fff;
+  border-radius: 5px;
+  padding: 2%;
+  margin: 1%;
+  font-weight: thin;
+  font-size: 0.7em;
+}
+
+.wrapper{
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  grid-gap: 10px;
+  background-color: #fff;
+  color: #444;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+@media only screen and (min-width: 450px) and (max-width: 650px) {
+  .wrapper{
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    grid-gap: 5px;
+    background-color: #fff;
+    color: #444;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 450px) {
+  .wrapper{
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    grid-gap: 5px;
+    background-color: #fff;
+    color: #444;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+  body{
+    font-size: 0.8em;
+  }
+  td{
+   font-size: 0.8em;
+  }
+}
+
+@media only screen and (min-width: 10px) and (max-width: 300px) {
+  body{
+    font-size: 0.7em;
+  }
+
+  td{
+   font-size: 0.7em;
+  }
+
+  .wrapper{
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    grid-gap: 5px;
+    background-color: #fff;
+    color: #444;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+
+}
