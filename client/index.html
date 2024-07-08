@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Mockup</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src="js/mds.js"></script>
+</head>
+<body>
+    <header>
+        <h1>MMR / ARCHIVE Network Maxima Searcher</h1>
+        <h3>Search for any coins, addresses, tokens info over the whole blockchain</h3>
+    </header>
+    <main>
+        <section class="form-section">
+            <form id="mainForm">
+                <div class="form-group">
+                    <label for="network">Network:</label>
+                    <select id="network" name="network" class="fixed-width">
+                        <option value="MMR">MMR</option>
+                        <option value="ARCHIVE">ARCHIVE</option>
+                    </select>
+                </div>
+                <div class="form-group">
+	                <label for="address">Address:</label>
+	                <input type="text" id="address" name="address"  placeholder="Enter address">
+                </div>
+                <div class="form-group">
+	                <label for="tokenid">Token Id:</label>
+	                <input type="text" id="tokenid" name="tokenid"  placeholder="Enter tokenid">
+                </div>
+                <div class="form-group">
+	                <label for="coinid">Coind Id:</label>
+	                <input type="text" id="coinid" name="coinid"  placeholder="Enter coinid">
+                </div>
+                <div class="form-group">
+                    <label for="command">Command:</label>
+                    <select id="command" name="command" class="fixed-width">
+                        <option value="coins">Coins</option>
+                        <option value="balance">Balance</option>
+                    </select>
+                </div>
+                <br/>
+                <fieldset class="type-search-fieldset">
+                    <legend>Type Search:</legend>
+                    <label><input type="checkbox" id="searchAddress" name="typeSearch" value="address" checked> Address</label>
+                    <label><input type="checkbox" id="searchTokenId" name="typeSearch" value="tokenid"> Token ID</label>
+                    <label><input type="checkbox" id="searchCoinId" name="typeSearch" value="coinid"> Coin ID</label>
+                </fieldset>
+                
+                <img src="https://fonts.gstatic.com/s/i/materialicons/expand_more/v6/24px.svg" id="toggleOptions" alt="Toggle Options">
+
+                <fieldset id="optionsFieldset" style="display: none;">
+                    <legend>Options:</legend>
+                    <div class="form-group">
+                        <label for="amount">Amount:</label>
+                        <input type="text" id="amount" name="amount" class="short-width" pattern="\d+(\.\d{1,2})?" placeholder="Enter amount">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="coinage">Coinage:</label>
+                        <input type="text" id="coinage" name="coinage" class="short-width" pattern="\d+" placeholder="Enter coinage">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="order">Order:</label>
+                        <select id="order" name="order" class="fixed-width">
+                            <option value="asc">ASC</option>
+                            <option value="desc">DESC</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="sendable">Sendable:</label>
+                        <select id="sendable" name="sendable" class="fixed-width">
+                            <option value=""></option>
+                            <option value="true">true</option>
+                        </select>
+                    </div>
+                </fieldset>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        
+        <!-- JSON Data Section -->
+        <section id="jsonDataSection" style="display: none;">
+            <h2>JSON Data</h2>
+            <ul id="jsonDataList"></ul>
+        </section>
+        
+    </main>
+    <section id="extraSection" style="display: none; background-color: rgba(245, 245, 220, 0.9); height: 90vh;"></section>
+    <footer>
+        <p>Powered by Minima, Archive and Mega MMR nodes that build a Maxima Service Network</p>
+    </footer>
+    <script src="js/mmr_ntw_client.js"></script>
+</body>
+</html>
