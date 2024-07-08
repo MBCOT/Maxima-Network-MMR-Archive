@@ -1,4 +1,4 @@
-# Maxima-Network-MMR-Archive
+# Maxima-Network-MMR-ARCHIVE over Maxima
 # Decentralized Network of Archive and MMR Nodes on Minima Blockchain
 
 ## Overview
