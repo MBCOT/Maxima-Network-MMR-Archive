@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f5f5dc; /* Marfil background color */
+}
+
+header, footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+main {
+    padding: 20px;
+}
+
+.form-section {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff; /* White background */
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label, legend {
+    margin-top: 1em;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 0.5em;
+}
+
+select {
+    margin-top: 0.5em;
+    padding: 5px;
+    font-size: 1em;
+}
+
+.fixed-width {
+    width: 100px; /* Set the width of the select elements to 100 pixels */
+}
+
+input[type="text"] {
+    padding: 10px;
+    margin-top: 0.5em;
+}
+
+.short-width {
+    width: 50%; /* Set to half the width */
+    max-width: 200px; /* Ensure the text fields are shorter */
+}
+
+.option-group {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5em; /* Reduce the margin-top to make them vertically closer */
+}
+
+button {
+    margin-top: 1em;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-top: 0.5em;
+}
+
+.form-group label {
+    margin-right: 10px;
+}
+
+#toggleOptions {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    margin-top: 10px;
+}
+
+#jsonDataSection {
+    width: 90%;
+    background-color: #e0e0e0; /* Slightly darker background color */
+    border-radius: 10px;
+    padding: 20px;
+    display: none;
+    margin-bottom: 20px;
+}
+
+#extraSection {
+    display: none;
+    background-color: rgba(220, 220, 190, 0.9); /* Slightly darker background color than marfil */
+    height: 90vh;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#jsonDataList {
+    list-style: none;
+    padding: 0;
+    overflow: auto;
+    white-space: pre;
+}
+
+#jsonDataList li {
+    background-color: yellow;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
