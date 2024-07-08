@@ -12,7 +12,7 @@ Anyone running (MMR / ARCHIVE) nodes can install the server Dapp, making their n
 ## Install
 Zip the server content folder (only the content, excluding the folder itself). Install this zip dapp file into any Minima node, launch the dapp, and start searching blockchain info.
 - **java -jar minima.jar -data MEGA_MMR -mdsenable -mdspassword 12345678 -megammr**
-
+- Install the server zip dapp, and **GIVE WRITE PERMISSIONS** before executing it, otherwise it won't work.
 ## Note
 This is only a proof of concept and requires further work to become a finished dapp. The coin update on the script is done every three minutes for testing purposes but should be done whenever the Maxima address changes.
 - **Only works on MMR nodes** This proof of concept so far it only works on Mega MMR nodes as it needs to be adapted the part that builds the commands to search for info on the Archives nodes to their specific syntax that is different from MMR nodes.
