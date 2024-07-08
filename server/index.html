@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="js/mds.js"></script>
+    <script type="text/javascript" src="js/mmr_ntw_server.js"></script> 
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="utf-8">
+    <title>Mega MMR / Archive Node Server</title>
+  </head>
+  <body>
+    <h1>MMR / ARCHIVE nodes Network over Maxima</h1>
+   
+    <div class="wrapper">
+      <div class="INF server login">
+        <h2>MMR / ARCHIVE Node</h2>
+
+        <br>
+        <div>
+          <p style="font-size: 1.5em;font-weight: bold;">0.0001 minimas are sent the first time to publish the Maxima address of this node, 
+          and then every three minutes the coin is modified with the new or the same Maxima address, which cost 0 minimas as the same coin
+          is re-used as input and output</p>
+          <h2 style="color:yellow">The Dapp needs WRITE Permissions to work</h2>
+        </div>
+        <div>
+          <p><button class="button" disabled>Configure the Node </button></p>
+          <p><button class="button" disabled>Add the node to Network</button></p>
+          <p><button class="button" disabled>Quit the node from the Network</button></p>
+        </div>
+      </div>
+
+    </div>
+   
+
+    <div class="Box Statussection">
+      <h2>STATUS AND TOOLS SECTION</h2>
+      <button class="button" onclick='listPetitionsDB();'>List Petittions Processed</button>
+      <button class="button" onclick='listScriptCoins();'>List Network Nodes</button>
+    
+      <pre id="status-object"></pre>
+    </div>
+    <div class="Box Credits">
+      <p style="text-align: center;">Mega MMR nodes Network, proof of concept</p>
+    </div>
+
+  </body>
+</html>
